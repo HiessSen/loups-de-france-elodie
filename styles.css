@@ -1,0 +1,239 @@
+/* Applique des styles de base au corps du document */
+body {
+    font-family: Arial, sans-serif; /* Utilise la police Arial avec une alternative sans-serif */
+    margin: 0; /* Supprime la marge par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+    background-color: #f4f4f4; /* Définit la couleur de fond à un gris clair */
+    color: #333;
+}
+/* Applique des styles de base à l'en-tête */
+header, footer{
+    color: #fff; /* Définit la couleur du texte à blanc */
+    background-color: #333; /* Définit la couleur de fond à un gris foncé */
+}
+div.banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 150px 0;
+    background-image: url('images/banièreDeLoup.jpg');
+}
+img.logo-banner{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+div.logo_titres{
+    margin: 50px;
+}
+div.banner div.logo_titres h1, div.banner div.logo_titres h2{
+    text-shadow: #333 1px 0 10px;
+    text-align: center;
+}
+div.banner div.logo_titres h1{
+    font-size: 4em;
+}
+div.banner div.logo_titres h2{
+    font-size: 3em;
+    text-align: center
+}
+nav{
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+}
+nav ul a{
+    width: 10%;
+    padding: 20px 10px;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+nav ul a.active{
+    text-decoration: underline;
+}
+nav ul a:hover{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    background-color: #f4f4f4;
+}
+footer{
+    padding: 30px 0;
+}
+footer p#copyright{
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+main{
+    padding: 50px 0;
+}
+main h1{
+    margin-bottom: 50px;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #333;
+}
+main div.carte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main div.carte h2{
+    font-size: 2em;
+    width: 95%;
+    margin: auto;
+}
+main div.carte div.carteGauche, main div.carte div.carteDroite{
+    width: 45%;
+}
+main div.carte div.carteGauche img, main div.carte div.carteDroite img{
+    width: 100%;
+    margin: 32px 0;
+    justify-self: center;
+}
+main div.carte div.carteGauche h2, main div.carte div.carteDroite h2{
+    text-align: justify;
+}
+main div.carte div.carteGauche p, main div.carte div.carteDroite p{
+    font-size: 2em;
+    text-align: justify;
+}
+main div.carte div.carteGauche a, main div.carte div.carteDroite a, main div.carte div.carteBody a{
+    height: 50px;
+    padding: 10px;
+    font-size: 2em;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+main div.carte div.carteBody a{
+    /* width: 21%; */
+    text-align: center;
+}
+main div.carte div.carteHead h2{
+    width: 100%;
+    margin-bottom: 20px;
+}
+main div.carte div.carteHead img{
+    width: 100%;
+}
+main div.carte div.carteBody{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main div.carte div.carteBody p, main p.descriptif{
+    width: 80%;
+    margin: 10px 10%;
+    font-size: 1.5em;
+    text-align: justify;
+}
+main div.containerGalerie{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main div.carteGalerie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 28%;
+    margin: 0 1%;
+}
+main div.carteGalerie h2, main div.carteGalerie p, main div.carteGalerie img{
+    width: 100%;
+    text-align: justify;
+}
+main div.carteGalerie img{
+    box-shadow: 0px 0px 10px #000;
+}
+div.separationHorizontale{
+    display: flex;
+    margin: 40px 10%;
+}
+div.separationHorizontaleGauche, div.separationHorizontaleDroite{
+    height: 100px;
+    width: 50%;
+    background-image: url(images/banniere_feuilles.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+div.separationHorizontaleDroite{
+    transform: rotateY(180deg);
+}
+form{
+    width: 60%;
+    margin: 0 20%;
+    font-size: 1.5em;
+    color: #333;
+}
+form fieldset{
+    margin: 20px auto
+}
+form legend{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+form input{
+    height: 30px;
+}
+form input, form label{
+    width: 50%;
+    margin: 10px 25%;
+}
+form div.checkBox{
+    width: 50%;
+    margin: 0 25%;
+}
+form input.check, form label.check{
+    width: min-content;
+    margin: 10px 0;
+}
+form input.check{
+    width: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    main div.carte div.carteGauche, main div.carte div.carteDroite{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    main div.carteGalerie{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 800px) {
+    nav ul a{
+        width: 30%;
+    }
+}   
+@media screen and (max-width: 800px) {
+    form{
+        width: 80%;
+        margin: 0 10%;
+        font-size: 1em;
+    }
+}   
+@media screen and (max-width: 600px) {
+    main div.carteGalerie{
+        width: 90%;
+    }
+}

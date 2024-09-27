@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LOGO ICON ************* -->
+    <link rel="shortcut icon" href="images/logoloup/logoO.png" type="x-icon"/>
+    <title>Page de contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="images/logoloup/logoO.png" alt="icon" class="logo-banner">
+            <div class="logo_titres">
+                <h1>Loups de France</h1>
+                <h2>Découvrez les trois races de loups de notre pays</h2>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Accueil</li></a>
+                <a href="loupGrisEuropeen.html"><li>Loup Gris Européen</li></a>
+                <a href="loupItalien.html"><li>Loup Italien</li></a>
+                <a href="loupDesCarpates.html"><li>Loup des Carpates</li></a>
+                <a href="Galerie.html"><li>Galerie</li></a>
+                <a href="Contac.html" class="active"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Contenu principal de la page -->
+        <h1>Contactez-nous</h1>
+        <form action="">
+            <fieldset>
+                <legend>Infos personnelles</legend>
+                <label for="nom">Entrez votre nom</label><br>
+                <input type="text"><br>
+                <label for="prenom">Entrez votre prénom</label><br>
+                <input type="text"><br>
+                <label for="adresse">Entrez votre adresse</label><br>
+                <input type="text"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Infos complémentaire</legend>
+                <label for="taille">Entrez votre taille</label><br>
+                <input type="text"><br>
+                <label for="poids">Entrez votre poids</label><br>
+                <input type="text"><br>
+                <label for="star">Entrez votre star preferée</label><br>
+                <input type="text"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Infos inutiles</legend>
+                <div class="checkBox">
+                    <input class="check" type="checkbox">
+                    <label class="check" for="aime">J'aime les loups</label>
+                </div>
+                <div class="checkBox">
+                    <input class="check" type="checkbox">
+                    <label class="check" for="aimePas">J'aime pas les loups</label>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p id="copyright">&copy; 2024, Élodie Ozier-Lafontaine, Loups de France</p>
+    </footer>
+</body>
+</html>
+
